@@ -1,0 +1,102 @@
+
+h1 {
+    text-align: center;
+	font-family: neon;
+    color: #426DFB;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+  }
+  
+  @keyframes flux {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+      color: #28D7FE;
+    }
+    50% {
+      text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+      color: #146C80;
+    }
+  }
+
+
+
+body {
+    font-family: 'MuseoModerno', cursive;
+    color: white;
+    background-image: linear-gradient( 245deg, #30cfd0 0%, #330867 100%);
+    background-size: 400% 400%;
+    animation: animated_bg 5s infinite alternate ;
+    text-align: center;
+}
+
+@keyframes animated_bg {
+  
+    0% {
+
+       background-position: 0% 0%;
+    }
+    50% {
+        background-position: 50% 75%;
+    }
+    100% {
+      
+        background-position: 25% 100%;
+    }
+  }
+      
+.game-board {
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: 120px 120px 120px;
+    grid-template-columns: 120px 120px 120px;
+    justify-content: center;
+}
+
+.box {
+    
+    background: rgb(201, 231, 231);
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(218, 54, 54);
+    font-size: 10vw;
+    box-shadow: 20px 20px 20px rgba(46, 229, 157, 0.4);
+}
+
+
+#time {
+    font-size: 40px;
+    position:relative;
+    top: 25%;
+    margin: 0 auto;
+    left: 0; right: 0;
+}
+  
+.buttons {
+    width: 100%;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+    width: 100px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.28);
+}
+  
+.button:hover{
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+  
+.button:hover {
+    background: #201e40;
+}
+
